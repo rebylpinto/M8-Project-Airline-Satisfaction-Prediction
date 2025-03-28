@@ -190,11 +190,11 @@ elif page == "Make Predictions!":
     
 
     # User inputs for prediction
-    gender = st.slider("Gender ---> Female: 0, Male: 1", min_value=0, max_value=1, value=1)
+    gender = st.slider("Gender ---> Female: 2, Male: 1", min_value=0, max_value=1, value=1)
     customer_type = st.slider("Customer Type ---> Disloyal Customer: 0, Loyal Customer: 1", min_value=0, max_value=1, value=1)
     age = st.slider("Age --> Pick An Age From 1 To 90", min_value=1, max_value=90, value=50)
-    travel_type = st.slider("Type of Travel ---> Personal Travel: 0 , Business Travel: 1", min_value=0, max_value=1, value=1)
-    travel_class = st.slider("Travel Class Types ---> Eco: 1, Eco Plus: 2, Business: 3", min_value=1, max_value=3, value=2)
+    travel_type = st.slider("Type of Travel ---> Personal Travel: 1 , Business Travel: 2", min_value=0, max_value=1, value=1)
+    travel_class = st.slider("Travel Class Types ---> Eco: 3, Eco Plus: 2, Business: 1", min_value=1, max_value=3, value=2)
     flight_distance = st.slider("Flight Distance ---> Pick A Distance Between 1 and 5000 Miles", min_value=1, max_value=5000, value= 2500)
     inflight_wifi = st.slider("Inflight WiFi Service Rating ---> Pick A Rating Between 1 and 5, If Not Applicable, Choose 0:", min_value=0, max_value=5, value=3)
     time_convenient = st.slider("Departure/Arrival Time Convenience ---> Pick A Rating Between 1 and 5, If Not Applicable, Choose 0:", min_value=0, max_value=5, value=3)
